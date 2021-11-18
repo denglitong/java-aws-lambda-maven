@@ -23,6 +23,6 @@ public class HelloHandler implements RequestHandler<Map<String, String>, String>
                 ? event.get("name")
                 : "china.compass";
 
-        return "Hello, " + userName + "!";
+        return String.format("Hello, %s !", userName);
     }
 }
